@@ -3,7 +3,7 @@
 #include <locale.h> //biblioteca de alocaÃ§Ãµes de texto por regiÃ£o
 #include <string.h> //biblioteca responsÃ¡vel por cuidar das string
 		
-int registro()//função respossavel por cadrasta os usuarios no sistema
+int registro() //função respossavel por cadrasta os usuarios no sistema
 {
 	// inicio da criação de variaveis/strings
 	char arquivo[40];
@@ -131,6 +131,7 @@ int main()
 		printf("\t1 - Registrar nomes\n");
 		printf("\t2 - Consultar nomes\n");
 		printf("\t3 - Deletar nomes\n\n"); 
+		printt("\t4 - Sair do sistema");
 		printf("Opção: ");//fim do menu
 				
 		scanf("%d", &opcao); //armazenando a escolha do usuario
@@ -149,6 +150,11 @@ int main()
 		
 			case 3:
 			deletar();
+			break;
+			
+			case 4:
+			printf("obrigado por usar nosso sistema");
+			return 0;
 			break;
 		
 			default:
